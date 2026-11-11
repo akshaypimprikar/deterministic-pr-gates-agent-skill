@@ -23,7 +23,7 @@ Not every gate applies to every project or every diff. Each gate below states it
 git diff <base-branch>...HEAD --name-only -- '<source file extension(s), e.g. *.swift or *.py *.ts>'
 ```
 
-If this returns no output, no source code changed on this branch — skip the Build and Test gates below and continue from Gate 2. If source files are listed, run Build and Test as normal. This is what lets a docs-only or config-only PR skip an expensive build/test cycle without skipping it silently.
+If this returns no output, no source code changed on this branch — skip the Build and Test gates below and continue from Gate 3. If source files are listed, run Build and Test as normal. This is what lets a docs-only or config-only PR skip an expensive build/test cycle without skipping it silently.
 
 ## Gate 1 — Build (conditional: source files changed)
 
